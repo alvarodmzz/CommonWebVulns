@@ -1,6 +1,6 @@
 # __Definición__
 
-XSS permite a un atacante ejecutar código arbitrario client-side en el navegador de una víctima. XSS se puede utilizar para phishing, datos de exfilación, adquisición de cuentas y más.
+El ataque XSS (Cross-site scripting) permite a un atacante ejecutar código arbitrario client-side en el navegador de una víctima. Se puede utilizar para phishing, datos de exfilación, adquisición de cuentas y más.
 
 # __Impacto__
 
