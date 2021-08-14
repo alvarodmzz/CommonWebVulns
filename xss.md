@@ -48,7 +48,7 @@ Aquí veriamos el ejemplo:
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MbL5rnDUc5SOFMrCAb3%2F-Mge7kJbQOyG68ts3cY5%2F-MgeLFzinC6HPLxgP0RB%2Fimage.png?alt=media&amp;token=57d97055-638b-40aa-bb88-e2ba6141fcfe)
 
-### __Bonus__
+### __Primer ejercicio__
 
 Una parte de los laboratorios de Nahamsec me pareció super interesante, vamos a echarle un vistazo:
 
@@ -79,7 +79,7 @@ http://nahamstore.thm/h4ns?file=<img src=x onerror=alert(document.cookie)>
 ```
 Lo que estamos haciendo en este código de javascript es pedir que nos cargue una imagen llamada `x` pero como esta no existe pues nos va a ejecutar el `alert()`. Esto se produce gracias al parámetro `onerror`.
 
-### __Bonus 2__
+### __Segundo ejercicio__
 
 En este caso nos vamos a dirigir a uno de los productos que están disponibles para comprar en la tienda, en concreto el de las pegatinas. 
 
