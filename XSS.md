@@ -38,7 +38,7 @@ Podemos observar como primero interpreta el código malicioso y luego nos devuel
 test1"><script>alert()</script>
 </title><u> h4ns </u> <script>alert(1)</script>
 ```
-Si tenemos un parámetro vulnerable como es en este caso name podríamos aprovecharnos y poner nuestro nombre cerrándolo con una comilla ' para luego decirle a la aplicación que ejecute todo lo que viene a continuación y descarte todo lo que está comentado a partir de las barras // .
+Si tenemos un parámetro vulnerable como es en este caso `name` podríamos aprovecharnos y poner nuestro nombre cerrándolo con una comilla ' para luego decirle a la aplicación que ejecute todo lo que viene a continuación y descarte todo lo que está comentado a partir de las barras // .
 
 ```bash
 http://xss4.naham.sec/?name=h4ns%27;+alert(1);//aaaa
