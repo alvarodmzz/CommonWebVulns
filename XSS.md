@@ -173,5 +173,3 @@ Aquí tendríamos el resultado:
 En concreto sería este tipo de evento el que se está vulnerando:
 
 [Location href Property](https://www.w3schools.com/jsref/prop_loc_href.asp)
-
-Gracias :)
