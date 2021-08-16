@@ -113,7 +113,7 @@ Podemos verificar que esto se va a ejecutar correctamente si miramos la respuest
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MbL5rnDUc5SOFMrCAb3%2F-Mgmbv-yMZVbZwCO2LtH%2F-MgmcISZI4kEGHcCJNzr%2Fimage.png?alt=media&amp;token=31fe1f44-c082-43d5-925d-c019570c9a19)
 
-Al final del payload podríamos poner " para cerrar comillas o // para hacer que esta última se convirtiese en un comentario.
+Al final del payload podríamos poner `"` para cerrar comillas o `//` para hacer que esta última se convirtiese en un comentario.
 
 ## __Stored XSS__
 
