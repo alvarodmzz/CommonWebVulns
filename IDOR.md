@@ -21,7 +21,7 @@ El control de acceso (Access Control) es un proceso de seguridad que controla el
 
 En resumen:
 
-`Obtener información confidencial con solo cambiar algunos valores en el parámetro`
+`Obtener información confidencial con solo cambiar algunos valores en el parámetro`.
 
 ## __Types of IDOR__
 
