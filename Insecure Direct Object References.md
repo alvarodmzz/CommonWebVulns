@@ -13,7 +13,7 @@
 
 # __What is IDOR vulnerability?__
 
-Un IDOR (Insecure Direct Object References) son un tipo de vulnerabilidad de control de acceso que se produce cuando una aplicación utiliza la entrada proporcionada por el usuario para acceder a un objeto (servidor), como un archivo, directorio o clave de base de datos directamente.
+Los IDORs (Insecure Direct Object References) son un tipo de vulnerabilidad de control de acceso que se produce cuando una aplicación utiliza la entrada proporcionada por el usuario para acceder a un objeto (servidor), como un archivo, directorio o clave de base de datos directamente.
 
 Esta vulnerabilidad es la más conocida dentro del campo de Improper Access Control el cual vamos a definir para conocer un poco más de que se trata este tipo de seguridad.
 
