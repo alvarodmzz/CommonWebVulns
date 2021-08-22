@@ -1,12 +1,12 @@
-# __Definición__
+# __Definition__
 
 El ataque XSS (Cross-site scripting) permite a un atacante ejecutar código arbitrario client-side en el navegador de una víctima. Se puede utilizar para phishing, datos de exfilación, adquisición de cuentas y más.
 
-# __Impacto__
+# __Impact__
 
 Leer/modificar/eliminar contenido de cualquier página, robar cookies o sesiones de un usuario y obtener acceso a su cuenta, ofrecer contenido malicioso como phishing.
 
-# __Tipos__
+# __Types of XSS__
 
 - Reflected XSS 
 
