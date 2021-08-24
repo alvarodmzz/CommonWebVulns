@@ -1,6 +1,6 @@
 ![IDORimage](https://user-images.githubusercontent.com/88755387/130352752-8ec4bf62-5b9b-422f-bfab-2a94df527608.png)
 
-## __Summary__
+## __Indice__
 
 - [__Main info__](#What-is-IDOR-vulnerability?)
 - [__Impact__](#Potential-Impact)
@@ -11,7 +11,7 @@
 
 
 
-# __What is IDOR vulnerability?__
+# __Qué es la vulnerabilidad IDOR?__
 
 Los IDORs (Insecure Direct Object References) son un tipo de vulnerabilidad de control de acceso que se produce cuando una aplicación utiliza la entrada proporcionada por el usuario para acceder a un objeto (servidor), como un archivo, directorio o clave de base de datos directamente.
 
@@ -23,7 +23,7 @@ En resumen:
 
 `Obtener información confidencial con solo cambiar algunos valores en el parámetro`.
 
-## __Types of IDOR__
+## __Tipos de IDOR__
 
 - Blind IDOR: El tipo de IDOR en el que los resultados de la explotación no se pueden ver en la respuesta del servidor. Por ejemplo, modificar los datos privados de otros usuarios sin acceder a ellos.
 
@@ -34,11 +34,11 @@ En resumen:
 
 - IDOR w/ Reference to Files: Se utiliza para acceder a un archivo no autorizado. Por ejemplo, un servidor de chat en vivo almacena las conversaciones confidenciales en archivos con nombres como números crecientes y cualquier conversación se puede recuperar simplemente enviando solicitudes como esta: `ejemplo.com/1.log, ejemplo.com/2.log, ejemplo.com/3.log` y así sucesivamente.
 
-# __Potential Impact__
+# __Impactos potenciales__
 
 Esta debilidad permite a un atacante eludir las restricciones de seguridad previstas y realizar una variedad de acciones según la fuente del error y la funcionalidad de la aplicación. Un atacante podría realizar ciertas acciones obteniendo privilegios elevados, leyendo información que de otro modo estaría restringida, ejecutando comandos, evitando los mecanismos de seguridad implementados, etc.
 
-# __Mitigations__ 
+# __Mitigaciones__ 
 
 Generalmente este vector de ataque resulta en errores lógicos. Los desarrolladores deben administrar cuidadosamente la configuración y el manejo de los privilegios, así como también prestar atención a las zonas de seguridad dentro de la aplicación. También deben integrar mecanismos que controlen la funcionalidad de separación de privilegios y pensar en crear una arquitectura que se base en el principio de privilegios mínimos.
 
@@ -48,9 +48,9 @@ A continuación os dejo una imagen donde podeis ver diferentes bypasses y tips:
 
 Ahora que ya sabemos lo básico sobre este tipo de vulnerabilidad vamos a lanzarnos a la práctica. 
 
-# __Basic IDOR__
+# __IDOR básico__
 
-## __First example__
+## __Primer ejemplo__
 
 Empezaremos por un ejemplo muy básico donde vamos a estar explotando un IDOR basado en una API para filtrar direcciones IP privadas. Este ejemplo lo saqué de un blog el cual si le quereis echar un vistazo podeis pinchar en el siguiente [enlace](https://www.zapstiko.com/).
 
@@ -68,7 +68,7 @@ Luego envió la solicitud al Intruder y bruteforceó el `UserId`, esto le permit
 
 Reportó el bug y en las 48h siguientes ya estaba parcheado por la empresa. Podeis comprobar como algo tan simple le dió a esta persona un bounty de 4 cifras :satisfied:.
 
-## __Second Example__
+## __Segundo ejemplo__
 
 En este caso vamos a cambiar la review y el comentario de un user. Estamos utilizando la aplicación vulnerable `juice shop` a través de la cual demostraremos este ataque. A continuación, podemos ver que la review del usuario `admin` es algo que reemplazaremos por malas críticas.
 
@@ -102,7 +102,7 @@ Ahora la cuestión es, como podriamos mitigar esto? :grimacing:
 
 # __IDOR chain__
 
-## __Exploiting a Self Stored XSS with an IDOR__
+## __Explotando un Self Stored XSS con un IDOR__
 
 En este caso no voy a poder explicarlo de una manera práctica debido a que lo saqué de un blog el cual puedes ir directamente pinchando [aquí](https://footstep.ninja/posts/exploiting-self-xss/).
 
@@ -143,7 +143,7 @@ Ahora cambiamos la cabecera a /admin para ver si nos deja entrar y efectivamente
 
 Para eliminar al usuario Carlos tendríamos que cambiar el header a `/admin/delete` y poner en la URL principal `/?username=carlos`.
 
-## __How to prevent access control vulnerabilities__
+## __Cómo prevenir las vulnerabilidades de Access control__
 
 Las vulnerabilidades de `Access control` generalmente se pueden prevenir adoptando un enfoque de defensa en profundidad y aplicando los siguientes principios:
 
