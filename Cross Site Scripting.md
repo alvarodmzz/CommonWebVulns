@@ -1,12 +1,12 @@
-# __Definition__
+# __Definición__
 
 El ataque XSS (Cross-site scripting) permite a un atacante ejecutar código arbitrario client-side en el navegador de una víctima. Se puede utilizar para phishing, datos de exfilación, adquisición de cuentas y más.
 
-# __Impact__
+# __Impacto__
 
 Leer/modificar/eliminar contenido de cualquier página, robar cookies o sesiones de un usuario y obtener acceso a su cuenta, ofrecer contenido malicioso como phishing.
 
-# __Types of XSS__
+# __Tipos de XSS__
 
 - Reflected XSS 
 
@@ -48,7 +48,7 @@ Aquí veriamos el ejemplo:
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MbL5rnDUc5SOFMrCAb3%2F-Mge7kJbQOyG68ts3cY5%2F-MgeLFzinC6HPLxgP0RB%2Fimage.png?alt=media&amp;token=57d97055-638b-40aa-bb88-e2ba6141fcfe)
 
-### __Primer ejercicio__
+### __Primer ejemplo__
 
 Una parte de los laboratorios de Nahamsec me pareció super interesante, vamos a echarle un vistazo:
 
@@ -79,7 +79,7 @@ http://nahamstore.thm/h4ns?file=<img src=x onerror=alert(document.cookie)>
 ```
 Lo que estamos haciendo en este código de javascript es pedir que nos cargue una imagen llamada `x` pero como esta no existe pues nos va a ejecutar el `alert()`. Esto se produce gracias al parámetro `onerror`.
 
-### __Segundo ejercicio__
+### __Segundo ejemplo__
 
 En este caso nos vamos a dirigir a uno de los productos que están disponibles para comprar en la tienda, en concreto el de las pegatinas. 
 
