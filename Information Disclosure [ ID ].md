@@ -17,9 +17,9 @@
 
 Este tipo de problemas no se pueden explotar en la mayoría de los casos, pero se consideran problemas de seguridad de aplicaciones web porque permiten a los atacantes recopilar información relevante que se puede utilizar más adelante para lograr un mayor impacto en el ataque.
 
-# __<span style="color:aqua"> Diferentes tipos de Information Disclosure </span>__
+# __Diferentes tipos de Information Disclosure__
 
-## __<span style="color:aqua"> Banner grabbing </span>__
+## __Banner grabbing__
 
 > El banner grabbing es un proceso de recopilación de información como el sistema operativo, los detalles del servidor, el nombre del servicio que se ejecuta con su número de versión y mucha información al respecto.
 
@@ -31,7 +31,7 @@ Podemos ver que Netsparker identificó una versión antigua de PHP ejecutándose
 
 ![http_response_php_version](https://user-images.githubusercontent.com/88755387/130510165-a1735cc3-e546-442c-acf6-44f215570733.png)
 
-## __<span style="color:aqua"> Source Code Disclosure </span>__
+## __Source Code Disclosure__
 
 > Esto ocurre cuando el código del entorno de back-end de una aplicación web se expone al público. Si se revelan archivos de código fuente, un atacante puede usar dicha información para descubrir fallas lógicas.
 
@@ -43,7 +43,7 @@ Los navegadores web saben cómo analizar la información que reciben del encabez
 
 Aunque si el servidor web está mal configurado y, por ejemplo, envía el encabezado Content-Type: text/plain en lugar de Content-Type: text/html al servir una página HTML, el código se mostrará como texto sin formato en el navegador, lo que permite al atacante para ver el código fuente de la página.
 
-## __<span style="color:aqua"> Filename and File path disclosure </span>__
+## __Filename and File path disclosure__
 
 > Esto puede suceder debido a un manejo incorrecto de la entrada del usuario, excepciones en el back-end o una configuración inapropiada del servidor web. En ocasiones, dicha información se puede encontrar o identificar en las respuestas de las aplicaciones web, páginas de error, información de depuración, etc.
 
@@ -59,11 +59,11 @@ Pero cuando el atacante envía la siguiente secuencia, obtiene una respuesta 404
 
 Dado que para la primera solicitud el atacante obtuvo un error 403 y para la segunda obtuvo un 404, sabe que en el primer caso el archivo en cuestión existe. Por lo tanto, el atacante puede utilizar el comportamiento de la aplicación web a su favor, como un exploit para comprender cómo está estructurado el servidor y verificar si una determinada carpeta o archivo existe en el sistema.
 
-## __<span style="color:aqua"> Inappropriate handling of sensitive data </span>__
+## __Inappropriate handling of sensitive data__
 
 > Esto puede suceder cuando los datos confidenciales no se eliminan del código fuente o de otro lugar. Algunos datos como el nombre de usuario, la contraseña o algún comentario importante pueden estar presentes allí, lo que puede revelar algunos datos confidenciales.
 
-# __<span style="color:violet"> NTLM </span>__
+# __NTLM__
 
 > De forma predeterminada, en el entorno de dominio de Windows, la autenticación utiliza el protocolo Kerberos para autenticar y autorizar a los usuarios. Si el protocolo Kerberos no se puede utilizar por algún motivo, se utiliza NT LAN Manager (NTLM) como reserva. Podemos deshabilitar este comportamiento estableciendo la propiedad `AllowNtlm` en `false`. 
 
@@ -72,7 +72,7 @@ Los problemas a tener en cuenta al permitir NTLM son los siguientes:
 - Expone el nombre de usuario del cliente. Si es necesario mantener la confidencialidad del nombre de usuario tenemos que establecer la propiedad `AllowNTLM` del enlace en `false`.
 - No proporciona autenticación de servidor. Por lo tanto, el cliente no puede asegurarse de que se está comunicando con el servicio correcto cuando se usa como protocolo de autenticación.
 
-## __<span style="color:violet"> Especificar las credenciales del cliente o la identidad no válida obliga al uso de NTLM </span>__
+## __Especificar las credenciales del cliente o la identidad no válida obliga al uso de NTLM__
 
 Al crear un cliente, especificar sus credenciales sin un nombre de dominio o especificar una identidad de servidor no válida, hace que se utilice NTLM en lugar del protocolo Kerberos (si la propiedad `AllowNtlm` está configurada en `true`). 
 
@@ -87,7 +87,7 @@ El código no especifica un nombre de dominio y, por lo tanto, se utilizará NTL
 
 Si se especifica el dominio, pero también se especifica un nombre principal de servicio no válido mediante la función de identidad de punto final, se utilizará NTLM.
 
-# __<span style="color:springgreen"> Como prevenir los ataques de Information Disclosure </span>__
+# __Como prevenir los ataques de Information Disclosure__
 
 > Los problemas de seguridad en la divulgación de información pueden parecer triviales, pero no lo son. Permiten que los hackers obtengan información detallada y confidencial sobre el objetivo que quieren atacar simplemente realizando pruebas básicas y, a veces, simplemente buscando información en páginas públicas.
 
