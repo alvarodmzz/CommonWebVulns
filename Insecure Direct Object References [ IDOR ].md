@@ -2,10 +2,11 @@
 
 ## __Indice__
 
-- [__Main info__](#What-is-IDOR-vulnerability?)
-- [__Impact__](#Potential-Impact)
-- [__Mitigations__](#Mitigations)
-- [__Basic example__](#Basic-IDOR)
+- [__Main info__](#Qué-es-la-vulnerabilidad-IDOR?)
+- [__Types__](#Tipos-de-IDOR)
+- [__Impact__](#Impactos-potenciales)
+- [__Mitigations__](#Mitigaciones)
+- [__Basic example__](#IDOR-básico)
 - [__IDOR chain__](#IDOR-chain)
 - [__PortSwigger Labs__](#PortSwigger-Labs)
 
