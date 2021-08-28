@@ -2,7 +2,7 @@
 
 ## __<span style="color:white"> Tabla de contenidos </span>__
 
-- [__<span style="color:gold"> Información principal </span>__](#What-is-information-disclosure?)
+- [__Información principal__](#What-is-information-disclosure?)
 - [__<span style="color:aqua"> Tipos de ID </span>__](#Different-Types-of-Information-Disclosure-Issues)
   - [<span style="color:aqua"> Banner grabbing </span>](#Banner-grabbing)
   - [<span style="color:aqua"> Source Code Disclosure </span>](#Source-Code-Disclosure)
