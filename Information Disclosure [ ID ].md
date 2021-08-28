@@ -1,6 +1,6 @@
-![debug](https://user-images.githubusercontent.com/88755387/130437670-0f29ad5a-79d4-41f1-9668-fb0f4c426d53.jpg)
+![hackeri](https://user-images.githubusercontent.com/88755387/131217031-bb888540-c4f1-490e-83b9-cd1141dfdbed.jpg)
 
-## __<span style="color:white"> Tabla de contenidos </span>__
+## __Tabla de contenidos__
 
 - [__Información principal__](#Qué-es-Information-Disclosure?)
 - [__Tipos de ID__](#Diferentes-tipos-de-Information-Disclosure)
