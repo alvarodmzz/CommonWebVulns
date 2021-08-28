@@ -111,6 +111,4 @@ Las siguientes son algunos pasos a seguir para poder asegurarse de que las aplic
 
 - Configurar los tipos MIME correctos en el servidor web para todos los diferentes archivos que se utilizan en las aplicaciones web.
 
-
-
-
+![Information-disclosure-privacy-threat-tree](https://user-images.githubusercontent.com/88755387/131217078-3bfbc9f9-9d0d-45a4-b0be-7b4612df96a1.png)
