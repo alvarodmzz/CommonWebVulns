@@ -2,16 +2,16 @@
 
 ## __<span style="color:white"> Tabla de contenidos </span>__
 
-- [__Información principal__](#Qué-es-Information Disclosure?)
-- [__<span style="color:aqua"> Tipos de ID </span>__](#Diferentes-tipos-de-Information-Disclosure)
-  - [<span style="color:aqua"> Banner grabbing </span>](#Banner-grabbing)
-  - [<span style="color:aqua"> Source Code Disclosure </span>](#Source-Code-Disclosure)
-  - [<span style="color:aqua"> Filename and File path disclosure </span>](#Filename-and-File-path-disclosure)
-  - [<span style="color:aqua"> Inappropriate handling of sensitive data </span>](#Inappropriate-handling-of-sensitive-data)
-- [__<span style="color:violet"> NTLM </span>__](#NTLM)
-- [__<span style="color:springgreen"> Protección frente ID's </span>__](Como-prevenir-los-ataques-de-Information-Disclosure)
+- [__Información principal__](#Qué-es-Information-Disclosure?)
+- [__Tipos de ID__](#Diferentes-tipos-de-Information-Disclosure)
+  - [Banner grabbing](#Banner-grabbing)
+  - [Source Code Disclosure](#Source-Code-Disclosure)
+  - [Filename and File path disclosure](#Filename-and-File-path-disclosure)
+  - [Inappropriate handling of sensitive data](#Inappropriate-handling-of-sensitive-data)
+- [__NTLM__](#NTLM)
+- [__Protección frente ID's__](Como-prevenir-los-ataques-de-Information-Disclosure)
 
-# __<span style="color:gold"> Qué es Information Disclosure? </span>__
+# __Qué es Information Disclosure?__
 
 > La divulgación de información se produce cuando una aplicación web no protege adecuadamente la información confidencial, lo que provoca que se revele información o datos sensibles de los usuarios o cualquier cosa relacionada con ellos a un tercero.
 
