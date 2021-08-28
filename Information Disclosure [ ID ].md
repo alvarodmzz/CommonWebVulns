@@ -2,14 +2,14 @@
 
 ## __<span style="color:white"> Tabla de contenidos </span>__
 
-- [__Información principal__](#What-is-information-disclosure?)
-- [__<span style="color:aqua"> Tipos de ID </span>__](#Different-Types-of-Information-Disclosure-Issues)
+- [__Información principal__](#Qué-es-"Information Disclosure"?)
+- [__<span style="color:aqua"> Tipos de ID </span>__](#Diferentes-tipos-de-Information-Disclosure)
   - [<span style="color:aqua"> Banner grabbing </span>](#Banner-grabbing)
   - [<span style="color:aqua"> Source Code Disclosure </span>](#Source-Code-Disclosure)
   - [<span style="color:aqua"> Filename and File path disclosure </span>](#Filename-and-File-path-disclosure)
   - [<span style="color:aqua"> Inappropriate handling of sensitive data </span>](#Inappropriate-handling-of-sensitive-data)
 - [__<span style="color:violet"> NTLM </span>__](#NTLM)
-- [__<span style="color:springgreen"> Protección frente ID's </span>__](How-to-prevent-Information-Disclosure-attacks)
+- [__<span style="color:springgreen"> Protección frente ID's </span>__](Como-prevenir-los-ataques-de-Information-Disclosure)
 
 # __<span style="color:gold"> Qué es "Information Disclosure"? </span>__
 
