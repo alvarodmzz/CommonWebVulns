@@ -30,14 +30,11 @@ Si tiene éxito, configura las cookies de inicio de sesión y de usuario para `r
 
 ```perl
 my $q = new CGI;
-
 if ($q->cookie('loggedin') ne "true") {
-
   if (! AuthenticateUser($q->param('username'), $q->param('password'))) {
     ExitError("Error: you need to log in first");
   }
   else {
-
     # Set loggedin and user cookies
     $q->cookie(
       -name => 'loggedin',
@@ -49,7 +46,6 @@ if ($q->cookie('loggedin') ne "true") {
       );
   }
 }
-
 if ($q->cookie('user') eq "Administrator") {
   DoAdministratorTasks();
 }
