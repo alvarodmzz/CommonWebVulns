@@ -4,7 +4,7 @@
 
 - [__Description__](#Description)
 - [__Practise__](#Practise)
-- [__Types of I.A.__](#Types-of-I.A.)
+- [__Types of I.A.__](#Types-of-ia)
   - [__SAML__](#SAML)
   - [__Oauth__](#Oauth)
   - [__SSO__](#SSO)
