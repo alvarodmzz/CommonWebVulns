@@ -69,7 +69,7 @@ En enero de 2009, un atacante pudo obtener acceso de administrador a un servidor
 
 # __Types of I.A.__
 
-A la hora de encontrar este tipo de vulnerabilidad podemos hablar de tres tipos principales de flujos de autenticación:
+A la hora de encontrar este tipo de vulnerabilidad podemos hablar de tres principales tipos de flujos de autenticación:
 
 - SAML (Security Assertion Markup Language)
 - Oauth (Open Authorization)
