@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/88755387/135728854-1570f1bd-4b72-4501-a2e7-efeac8aff8d9.png)
 
-## __Summary__
+## __Summary_
 
 - [__What is CSRF__](#What-is-CSRF)
 - [__Manual exploitation of CSRF__](#Manual-exploitation-of-CSRF)
