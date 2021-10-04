@@ -1,6 +1,6 @@
 ![hackeri](https://user-images.githubusercontent.com/88755387/131217031-bb888540-c4f1-490e-83b9-cd1141dfdbed.jpg)
 
-## __Tabla de contenidos__
+## __Tabla de contenidos_
 
 - [__Información principal__](#Qué-es-Information-Disclosure?)
 - [__Tipos de ID__](#Diferentes-tipos-de-Information-Disclosure)
