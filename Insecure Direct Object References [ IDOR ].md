@@ -1,6 +1,6 @@
 ![IDORimage](https://user-images.githubusercontent.com/88755387/130352752-8ec4bf62-5b9b-422f-bfab-2a94df527608.png)
 
-## __Summary_
+## __Summary__
 
 - [__Main info__](#Qué-es-la-vulnerabilidad-IDOR?)
 - [__Types__](#Tipos-de-IDOR)
