@@ -1,6 +1,6 @@
 ![kb_0](https://user-images.githubusercontent.com/88755387/132330127-79c86075-5dca-4bd0-ae77-e51a5eb59401.png)
 
-## __Summary__
+## __Summary_
 
 - [__Basics of SQL language__](#Basics-of-SQL-language)
     - [__SQL Crash__](#SQL-Crash)
