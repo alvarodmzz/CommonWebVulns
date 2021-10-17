@@ -2,17 +2,17 @@
 
 ## __Summary__
 
-- [__What is CSRF__](#What-is-CSRF)
-- [__Manual exploitation of CSRF__](#Manual-exploitation-of-CSRF)
-- [__Automatic exploitation__](#Automatic-exploitation)
+- [__¿Qué es la vuln CSRF?__](#¿Qué-es-la-vuln-CSRF?)
+- [__Explotación manual__](#Explotación manual)
+- [__Explotación automática__](#Explotación automática)
 
-# __What is CSRF__
+# __¿Qué es la vuln CSRF?__
 
 Cross Site Request Forgery (CSRF) ocurre cuando un usuario visita una página en un sitio, que realiza una acción en un sitio diferente. Por ejemplo, digamos que un usuario hace clic en un enlace a un sitio web creado por un atacante, en el sitio web habría una etiqueta html como `<img src="https://vulnerable-website.com/email/change?email=pwned@evil-user.net ">` que cambiaría el correo electrónico de la cuenta en el sitio web vulnerable a `pwned@evil-user.net`. CSRF funciona porque es la víctima quien realiza la solicitud, no el sitio, por lo que todo lo que ve el sitio es un usuario normal que realiza una solicitud normal.
 
 Esto abre la puerta a que la cuenta del usuario se vea comprometida por completo mediante el uso de un password reset, por ejemplo. No se puede exagerar la gravedad de esto, ya que permite que un atacante obtenga potencialmente información personal sobre un usuario, como los detalles de la tarjeta de crédito (caso extremo).
 
-# __Manual exploitation of CSRF__
+# __Explotación manual__
 
 ![P6oMiiZ](https://user-images.githubusercontent.com/88755387/135119002-337c8115-e95c-4eed-a321-9501fa71011b.png)
 
@@ -28,7 +28,7 @@ Poniendo `<img src="http://localhost:3000/transfer?to=alice&amount=100">` en un 
 
 Podemos comprobar como, efectivamente, se han añadido 100 al sueldo de Alice.
 
-# __Automatic exploitation__
+# __Explotación automática__
 
 Si queremos automatizar nuestra búsqueda existe un buen escáner, que prueba si un sitio es vulnerable a CSRF. Esta herramienta se conoce como `xsrfprobe` y se puede instalar a través de pip usando `pip3 install xsrfprobe`.
 
