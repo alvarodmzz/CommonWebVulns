@@ -2,7 +2,7 @@
 
 ## __Summary__
 
-- [__Introducción al SSRF__](#Cuando-se-produce-un-SSRF?)
+- [__Introducción al SSRF__](#¿Cuándo-se-produce-un-SSRF?)
 - [__Tipos__](#Tipos-de-SSRF)
   - [__Basic__](#Basic-SSRF)
   - [__Blind__](#Blind-SSRF)
@@ -19,7 +19,7 @@
 - [__Funcionamiento__](#Cómo-funciona-realmente?)
 - [__SSRF report__](#SSRF-Report)
 
-# __Cuando se produce un SSRF?__
+# __¿Cuándo se produce un SSRF?__
 
 Un Server Side Request Forgery ocurre cuando una aplicación web permite hacer consultas HTTP del lado del servidor hacia un dominio arbitrario elegido por el atacante. Esto le permite al atacante hacer conexión con servicios de la infraestructura interna donde se aloja la web y exfiltrar información sensible.
 
