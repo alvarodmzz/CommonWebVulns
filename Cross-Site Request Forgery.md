@@ -36,8 +36,4 @@ La sintaxis del comando es `xsrfprobe -u <url>/<endpoint>`. Vamos a lanzarlo con
 
 ![5gx7k8D](https://user-images.githubusercontent.com/88755387/135122095-aa0f367c-ef70-4cea-a1af-59b4881bbc9a.png)
 
-El resultado confirma que hemos logrado explotarlo manualmente y que el sitio es vulnerable a CSRF.
-
-https://github.com/0xInfection/XSRFProbe
-
-Aqui os dejo la herramienta por si quereis echarle un ojo.
+El resultado confirma que hemos logrado explotarlo manualmente y que el sitio es vulnerable a CSRF. Os dejo la [herramienta](https://github.com/0xInfection/XSRFProbe) por si quereis echarle un ojo.
