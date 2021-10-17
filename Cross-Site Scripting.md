@@ -27,7 +27,7 @@ Leer/modificar/eliminar contenido de cualquier página, robar cookies o sesiones
 
 ## __Reflected XSS__
 
-En este caso voy a estar practicando en un laboratorio creado por NahamSec el cual podeis descargarlo en el siguiente enlace. 
+En este caso voy a estar practicando en un laboratorio creado por NahamSec.
 
 [Lab de Nahamsec](https://github.com/nahamsec/nahamsec.training)
 
