@@ -204,7 +204,7 @@ De esta forma, el agente malicioso obtendría acceso a la llave AWS y podría to
 
 ## __SSRF in https://imgur.com/vidgif/url__
 
-Os dejo el reporte en el siguiente [enlace](#https://hackerone.com/reports/115748).
+Os dejo el reporte en el siguiente [enlace](https://hackerone.com/reports/115748).
 
 ### __Explicacion del por qué de esta vuln__
 
