@@ -2,20 +2,20 @@
 
 ## __Summary__
 
-- [__Basics of SQL language__](#Basics-of-SQL-language)
-    - [__SQL Crash__](#SQL-Crash)
-- [__What is SQLi?__](#What-is-SQLi?)
-- [__How to detect SQLi?__](#Howto-detect-SQLi?)
+- [__Conceptos básicos del lenguaje SQL__](#Conceptos-básicos-del-lenguaje-SQL)
+    - [__Bloqueo de SQL__](#Bloqueo-de-SQL)
+- [__¿Qué es SQLi?__](#¿Qué-es-SQLi?)
+- [__¿Cómo detectar SQLi?__](#¿Cómo detectar SQLi?)
     - [__Manual - PHP parameter__](#Manual---PHP-parameter)
     - [__Automatic - Damn Small SQLi Scanner__](#Automatic---Damn-Small-SQLi-Scanner)
     - [__Automatic - suIP.biz__](#Automatic---suIP.biz)
-- [__Error Based SQLi__](#Error-Based-SQLi)
+- [__Error Based SQLi [SQLi basado en errores]__](#Error-Based-SQLi)
     - [__Manual exploitation - SQLi Labs__](#Manual-exploitation---SQLi-Labs)
-- [__Boolean Based SQLi__](#Boolean-Based-SQLi)
+- [__Boolean Based SQLi [SQLi basado en booleanos]__](#Boolean-Based-SQLi)
     - [__Blind query breaking - SQLi Labs__](#Blind-query-breaking---SQLi-Labs)
-    - [__Exploitation__](#Exploitation)
-- [__Union Based SQLi__](#Union-Based-SQLi)
-    - [__Approach__](#Approach)
+    - [__Explottación__](#Explotación)
+- [__Union Based SQLi [SQLi basado en uniones]__](#Union-Based-SQLi)
+    - [__Enfoque__](#Enfoque)
         - [__Determining the number of columns required in an SQL injection UNION attack__](#Determining-the-number-of-columns-required-in-an-SQL-injection-UNION-attack)
         - [__Finding columns with a useful data type in an SQL injection UNION attack__](#Finding-columns-with-a-useful-data-type-in-an-SQL-injection-UNION-attack)
         - [__Using an SQL injection UNION attack to retrieve interesting data__](#Using-an-SQL-injection-UNION-attack-to-retrieve-interesting-data)
@@ -25,13 +25,13 @@
     - [__Burpsuite + SQLmap__](#Burpsuite-+-SQLmap)
 - [__What's next?__](#What's-next?)
 
-# __Basics of SQL language__
+# __Conceptos básicos del lenguaje SQL__
 
 "Una base de datos es una colección organizada de datos, generalmente almacenados y a los que se accede electrónicamente desde un sistema informático." Hay muchos tipos de bases de datos diferentes, como MySQL, PostgreSQL, etc.
 
 SQL en sí mismo es un lenguaje específico de dominio que se utiliza en la programación para administrar bases de datos mediante la lectura de datos operativos.
 
-## __SQL Crash__
+## __Bloqueo de SQL__
 
 Para comprender SQLi, primero debemos comprender algunos conceptos básicos del lenguaje SQL. En lo que respecta a SQLi, nos centramos principalmente en obtener información de la base de datos.
 
@@ -51,7 +51,7 @@ SELECT * FROM food WHERE calories > 50;
 
 Si quereis continuar aprendiendo sobre SQL os dejo el siguiente enlace el cual es un curso de Khan Academy: https://www.khanacademy.org/computing/computer-programming/sql
 
-# __What is SQLi?__
+# __¿Qué es SQLi?__
 
 Un ataque de SQL injection consiste en la inyección de una SQL query a la aplicación web remota. 
 
@@ -84,7 +84,7 @@ Esto producirá un escenario diferente. 1=1 se trata como `true` en el lenguaje 
 
 `' --` también hará un trabajo aquí. Este payload transforma un nombre de usuario en una cadena vacía para salir de la consulta y luego agrega un comentario (--) que oculta la segunda comilla simple haciendo que la base de datos devuelva información.
 
-# __How to detect SQLi?__
+# __¿Cómo detectar SQLi?__
 
 ## __Manual - PHP parameter__
 
@@ -150,7 +150,7 @@ Esta es una herramienta basada en sqlmap online que nos permite realizar una ver
 
 Error-based SQLi es una técnica de SQL injection que se basa en mensajes de error que se utilizan para recuperar información confidencial. En algunos casos, la error-based SQL injection por sí sola es suficiente para que un atacante enumere una base de datos completa.
 
-## __Approach__
+## __Enfoque__
 
 Entonces, como se ve en la definición, en realidad queremos crear un error de SQL, mostrando algo de contenido sensible. Como vimos anteriomente, pudimos obtener el tipo de base de datos creando un error. Ahora tenemos que ir más allá y conseguir algo más interesante.
 
@@ -220,7 +220,7 @@ Entonces, para resumir, en la error-based SQLi injection, primero necesitamos en
 
 La boolean-based SQL injection se basa en enviar una consulta SQL a la base de datos, lo que obliga a la aplicación a devolver un resultado diferente dependiendo de si la consulta dio un resultado TRUE o FALSE. Dependiendo del resultado, el contenido de la respuesta HTTP cambiará o seguirá siendo el mismo (el cambio en la respuesta HTTP generalmente significa una respuesta FALSE, mientras que TRUE no afecta nada). Esto permite que un atacante comprenda si el payload utilizado devolvió true or false, aunque no se devuelvan datos de la base de datos.
 
-## __Approach__
+## __Enfoque__
 
 El boolean-based SQLi generalmente se lleva a cabo en una situación ciega. Ciego, en este caso, significa que no hay una salida real y que no podemos ver ningún mensaje de error (como hicimos anteriormente).
 
@@ -268,7 +268,7 @@ Seguimos viendo el mensaje.
 
 Poniendo `OR 0` no mostrará el mensaje, lógicamente, lo que demuestra nuestra capacidad para realizar un ataque de SQL injection.
 
-## __Exploitation__
+## __Explotación__
 
 Ahora que solo podemos devolver True (Your are in........) o False (sin mensaje) statements tenemos que empezar a jugar al juego del `yes-no` con la base de datos. Haciendo 'preguntas' sobre la longitud de la base de datos y la cantidad de la tabla, podremos volcar y enumerar la base de datos.
 
@@ -326,7 +326,7 @@ Por supuesto, en el mundo real no podemos simplemente adivinar eso, por lo que d
 
 Union-based SQLi es una técnica de SQL injection que aprovecha el operador UNION SQL para combinar los resultados de dos o más declaraciones SELECT en un solo resultado que luego se devuelve como parte de la respuesta HTTP.
 
-## __Approach__
+## __Enfoque__
 
 La keyword UNION nos permite ejecutar una o más consultas SELECT adicionales y agregar los resultados a la consulta original. Por ejemplo:
 
