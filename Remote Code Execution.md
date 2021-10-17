@@ -2,13 +2,13 @@
 
 ## __Summary__
 
-- [__What is a RCE__](#What-is-a-RCE)
+- [__¿Qué es un RCE?__](#¿Qué-es-un-RCE?)
 - [__Shells__](#Shells)
     - [__Webshells__](#Webshells)
     - [__Reverse shells__](#Reverse-shells)
-- [__How to prevent RCE__](#How-to-prevent-RCE)
+- [__Como prevenirse frente a RCEs__](#Como-prevenirse-frente-a-RCEs)
 
-# __What is a RCE__
+# __¿Qué es un RCE?__
 
 Remote Code Execution (como su nombre indica) nos va a permitir ejecutar código de forma arbitraria en el servidor web. Si bien es probable que se trate de una cuenta de usuario web con pocos privilegios (como www-data en servidores Linux), sigue siendo una vulnerabilidad extremadamente grave. RCE a través de una aplicación web tiende a ser el resultado de subir un programa escrito en el mismo idioma que el back-end del sitio web (u otro idioma que el servidor comprenda y ejecute). Tradicionalmente, esto sería PHP, sin embargo, en la actualidad, se han vuelto más comunes otros lenguajes de back-end (Python Django y Javascript en forma de Node.js son ejemplos principales).
 
@@ -156,7 +156,7 @@ Si quereis saber más a cerca de estos payloads podeis mirar la siguiente cheats
 
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#php
 
-# __How to prevent RCE__
+# __Como prevenirse frente a RCEs__
 
 Para que un atacante realice un ataque RCE, el sistema objetivo debe tener una vulnerabilidad preexistente para que este la aproveche. Varias vulnerabilidades podrían abrir la puerta a un ataque RCE, demasiadas para nombrarlas. Sin embargo, los siguientes tipos de vulnerabilidades son los más utilizados para perpetrar ataques RCE:
 
