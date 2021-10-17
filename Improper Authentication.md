@@ -2,15 +2,15 @@
 
 ## __Summary__
 
-- [__Description__](#Description)
-- [__Practise__](#Practise)
-- [__Types of I.A.__](#Types-of-ia)
+- [__Descripción__](#Descripción)
+- [__Práctica__](#Práctica)
+- [__Tipos de I.A.__](#Types-of-ia)
   - [__SAML__](#SAML)
   - [__Oauth__](#Oauth)
   - [__SSO__](#SSO)
-- [__Curious case__](#Curious-case)
+- [__Un caso curioso__](#Un-caso-curioso)
 
-# __Description__
+# __Descripción__
 
 La autenticación incorrecta ocurre cuando una aplicación verifica incorrectamente la identidad de un usuario.
 
@@ -18,7 +18,7 @@ Un software valida incorrectamente la información de inicio de sesión del usua
 
 La debilidad se introduce durante las etapas de Arquitectura, Diseño e Implementación.
 
-# __Practise__
+# __Práctica__
 
 A continuación os voy a dejar dos ejemplos que ayudan a ilustrar la naturaleza de esta debilidad y describen métodos o técnicas que pueden usarse para mitigar el riesgo.
 
@@ -67,7 +67,7 @@ Al configurar la cookie de inicio de sesión en `true`, el atacante bypassea tod
 
 En enero de 2009, un atacante pudo obtener acceso de administrador a un servidor de Twitter porque el servidor no restringió el número de intentos de inicio de sesión. El atacante apuntó a un miembro del equipo de soporte de Twitter y pudo adivinar con éxito la contraseña del miembro mediante un ataque de fuerza bruta adivinando una gran cantidad de palabras comunes. Después de obtener acceso como miembro del personal de apoyo, el atacante usó el admin panel para obtener acceso a 33 cuentas que pertenecían a celebridades y políticos. Al final, se enviaron mensajes de Twitter falsos que parecían provenir de las cuentas comprometidas.
 
-# __Types of I.A.__
+# __Tipos de I.A.__
 
 A la hora de encontrar este tipo de vulnerabilidad podemos hablar de tres principales tipos de flujos de autenticación:
 
@@ -137,7 +137,7 @@ Y ya seríamos Admin:
 
 El inicio de sesión único (SSO) es una capacidad de autenticación que permite que los usuarios accedan a varias aplicaciones con un único conjunto de credenciales de inicio de sesión. Por lo general, las empresas utilizan SSO para proporcionar un acceso más sencillo a una serie de aplicaciones web, en las instalaciones y en la nube para obtener una mejor experiencia del usuario.
 
-# __Curious case__
+# __Un caso curioso__
 
 Servicio de inicio de sesión único (SSO) basado en SAML proporcionado por partners:
 
