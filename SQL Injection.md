@@ -124,7 +124,7 @@ http://10.10.225.47/sqli-labs/Less-1/index.php?id='
 
 ## __Automatic - Damn Small SQLi Scanner__
 
-En este caso vamos a hacer uso de la herramienta DSSS el cual podeis descargarla en el siguiente enlace: https://github.com/stamparm/DSSS
+En este caso vamos a hacer uso de la herramienta [DSSS](https://github.com/stamparm/DSSS).
 
 Damn Small SQLi Scanner es un pequeño script de python que nos permite verificar la vulnerabilidad de SQLi. Simplemente tenemos que proporcionar un enlace al parámetro PHP para ejecutarlo.
 
@@ -140,9 +140,7 @@ No solo detectó la vulnerabilidad, sino que nos proporcionó el tipo de base de
 
 ## __Automatic - suIP.biz__
 
-Link: https://suip.biz/?act=sqlmap
-
-Esta es una herramienta basada en sqlmap online que nos permite realizar una verificación rápida de SQLi. Desafortunadamente, no podemos ejecutarlo en nuestra máquina, pero esta herramienta puede ser muy útil en las pruebas del mundo real.
+Esta es una [herramienta](https://suip.biz/?act=sqlmap) basada en sqlmap online que nos permite realizar una verificación rápida de SQLi. Desafortunadamente, no podemos ejecutarlo en nuestra máquina, pero esta herramienta puede ser muy útil en las pruebas del mundo real.
 
 # __Error Based SQLi [basado en errores]__
 
