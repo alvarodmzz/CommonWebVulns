@@ -2,7 +2,7 @@
 
 ## __Summary__
 
-- [__Información principal__](#Qué-es-la-vulnerabilidad-IDOR?)
+- [__¿Qué es la vuln IDOR?__](#¿Qué-es-la-vuln-IDOR?)
 - [__Tipos__](#Tipos-de-IDOR)
 - [__Impacto__](#Impactos-potenciales)
 - [__Mitigaciones__](#Mitigaciones)
@@ -12,7 +12,7 @@
 
 
 
-# __Qué es la vulnerabilidad IDOR?__
+# __¿Qué es la vuln IDOR?__
 
 Los IDORs (Insecure Direct Object References) son un tipo de vulnerabilidad de control de acceso que se produce cuando una aplicación utiliza la entrada proporcionada por el usuario para acceder a un objeto (servidor), como un archivo, directorio o clave de base de datos directamente.
 
