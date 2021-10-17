@@ -128,9 +128,7 @@ Al final del payload podríamos poner `"` para cerrar comillas o `//` para hacer
 
 Estos casos son un poco más complicados debido a su complejidad. Podríamos aprovecharnos de esta vulnerabilidad para realizar un CSRF, vamos a ver un ejemplo. 
 
-Esta vez voy a estar operando en la plataforma de PortSwigger.
-
-[XSS to CSRF](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf)
+Esta vez voy a estar operando en la plataforma de [PortSwigger](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf).
 
 Si miramos el código de la página vamos a observar que tenemos que hacer una solicitud POST a la dirección `/my-account/change-email` . También nos damos cuenta de que existe un anti-CSRF token en un input oculto llamado `token`.
 
@@ -159,9 +157,7 @@ function handleResponse() {
 
  DOM XSS ocurre cuando javascript refleja datos de un recurso controlado por un atacante (por ejemplo, dentro de la URL) y los pasa a una función más adelante.
 
-Vamos a observar algún ejemplo:
-
-[Reporte de hackerone](https://hackerone.com/reports/324303)
+Vamos a observar algún ejemplo en la plataforma de [HackerOne](https://hackerone.com/reports/324303).
 
 Este tipo de XSS es mucho mas complicado que los anteriores y es necesario tener conocimientos a cerca de javascript y HTML.
 
@@ -179,6 +175,4 @@ Aquí tendríamos el resultado:
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MbL5rnDUc5SOFMrCAb3%2F-MgeWoqfWUGTPcqYhp8V%2F-MgeZ5ESHG-WrSmxRdIV%2Fimage.png?alt=media&amp;token=6d18cbbb-4311-424a-b803-7c860b7fd82a)
 
-En concreto sería este tipo de evento el que se está vulnerando:
-
-[Location href Property](https://www.w3schools.com/jsref/prop_loc_href.asp)
+En concreto sería este tipo de evento el que se está vulnerando: [Location href Property](https://www.w3schools.com/jsref/prop_loc_href.asp).
