@@ -124,7 +124,7 @@ Una vez que hemos hecho todo esto, ya nos podemos meter en dicha página.
 
 Hemos logrado realizar un subdomain takeover :laughing:.
 
-Esto no habría sido posible sin la ayuda de [Víctor García](https://twitter.com/takito1812) el cual estuvo enseñándome de que iba este ataque y como podía ser explotado.
+Esto no habría sido posible sin la ayuda de [Víctor García](https://twitter.com/takito1812) el cual estuvo enseñándome sobre qué se trataba este ataque y como podía ser explotado.
 
 
 
