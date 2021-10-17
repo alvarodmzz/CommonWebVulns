@@ -491,7 +491,7 @@ sqlmap -r {request} --batch
 
 ![sqli14](https://user-images.githubusercontent.com/88755387/132328072-eb996b99-f75b-4fc1-9787-8e089c6c2ad5.png)
 
-Como podeis comprobar nos lanza la misma respuesta que anteriormente.
+Como podeis comprobar nos lanza la misma respuesta que antes.
 
 # __What's next?__
 
