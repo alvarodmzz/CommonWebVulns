@@ -3,24 +3,24 @@
 ## __Summary__
 
 - [__Conceptos básicos del lenguaje SQL__](#Conceptos-básicos-del-lenguaje-SQL)
-    - [__Bloqueo de SQL__](#Bloqueo-de-SQL)
+    - [__Conceptos-de-SQLi__](#Conceptos-de-SQLi)
 - [__¿Qué es SQLi?__](#¿Qué-es-SQLi?)
-- [__¿Cómo detectar SQLi?__](#¿Cómo detectar SQLi?)
+- [__Como detectarlo__](#Como-detectarlo)
     - [__Manual - PHP parameter__](#Manual---PHP-parameter)
     - [__Automatic - Damn Small SQLi Scanner__](#Automatic---Damn-Small-SQLi-Scanner)
     - [__Automatic - suIP.biz__](#Automatic---suIP.biz)
-- [__Error Based SQLi [SQLi basado en errores]__](#Error-Based-SQLi)
+- [__Error Based SQLi [basado en errores]__](#Error-Based-SQLi-[basado-en-errores])
     - [__Manual exploitation - SQLi Labs__](#Manual-exploitation---SQLi-Labs)
-- [__Boolean Based SQLi [SQLi basado en booleanos]__](#Boolean-Based-SQLi)
-    - [__Blind query breaking - SQLi Labs__](#Blind-query-breaking---SQLi-Labs)
-    - [__Explottación__](#Explotación)
-- [__Union Based SQLi [SQLi basado en uniones]__](#Union-Based-SQLi)
+- [__Boolean Based SQLi [basado en booleanos]__](#Boolean-Based-SQLi-[basado-en-booleanos])
+    - [__Blind query breaking - SQLi Labs [consultas a ciegas]__](#Blind-query-breaking---SQLi-Labs)
+    - [__Explotación__](#Explotación)
+- [__Union Based SQLi [basado en uniones]__](#Union-Based-SQLi-[basado-en-uniones])
     - [__Enfoque__](#Enfoque)
-        - [__Determining the number of columns required in an SQL injection UNION attack__](#Determining-the-number-of-columns-required-in-an-SQL-injection-UNION-attack)
-        - [__Finding columns with a useful data type in an SQL injection UNION attack__](#Finding-columns-with-a-useful-data-type-in-an-SQL-injection-UNION-attack)
-        - [__Using an SQL injection UNION attack to retrieve interesting data__](#Using-an-SQL-injection-UNION-attack-to-retrieve-interesting-data)
-    - [__Practice__](#Practice)
-- [__Automating exploitation__](#Automating-exploitation)
+        - [__Determinar el número de columnas necesarias en un ataque de UNION de inyección SQL__](#Determinar-el-número-de-columnas-necesarias-en-un-ataque-de-UNION-de-inyección-SQL)
+        - [__Encontrar columnas con un tipo de datos útil en un ataque de UNION de inyección SQL__](#Encontrar-columnas-con-un-tipo-de-datos-útil-en-un-ataque-UNION-de-inyección-SQL)
+        - [__Usar un ataque de UNION de inyección SQL para encontrar información interesante__](#Usar-un-ataque-de-UNION-de-inyección-SQL-para-encontrar-información-interesante)
+    - [__Práctica__](#Práctica)
+- [__Explotación automática__](#Explotación-automática) 
     - [__SQLmap__](#SQLmap)
     - [__Burpsuite + SQLmap__](#Burpsuite-+-SQLmap)
 - [__What's next?__](#What's-next?)
@@ -84,7 +84,7 @@ Esto producirá un escenario diferente. 1=1 se trata como `true` en el lenguaje 
 
 `' --` también hará un trabajo aquí. Este payload transforma un nombre de usuario en una cadena vacía para salir de la consulta y luego agrega un comentario (--) que oculta la segunda comilla simple haciendo que la base de datos devuelva información.
 
-# __¿Cómo detectar SQLi?__
+# __Como detectarlo__
 
 ## __Manual - PHP parameter__
 
@@ -144,9 +144,9 @@ Link: https://suip.biz/?act=sqlmap
 
 Esta es una herramienta basada en sqlmap online que nos permite realizar una verificación rápida de SQLi. Desafortunadamente, no podemos ejecutarlo en nuestra máquina, pero esta herramienta puede ser muy útil en las pruebas del mundo real.
 
-# __Error Based SQLi__
+# __Error Based SQLi [basado en errores]__
 
-## __Definition__
+## __Definición__
 
 Error-based SQLi es una técnica de SQL injection que se basa en mensajes de error que se utilizan para recuperar información confidencial. En algunos casos, la error-based SQL injection por sí sola es suficiente para que un atacante enumere una base de datos completa.
 
@@ -214,9 +214,9 @@ http://10.10.225.47/sqli-labs/Less-1/index.php?id=1' AND 1=1 --+
 
 Entonces, para resumir, en la error-based SQLi injection, primero necesitamos encontrar un enlace o formulario de entrada donde podamos crear un error. Luego, al ingresar elementos aleatorios como comillas simples o dobles, barras o barras invertidas, necesitamos comprender el patrón común y descubrir la estructura básica de la consulta SQL. Después de eso, simplemente abusamos de nuestros conocimientos adquiridos para explotar la aplicación y obtener lo que queriamos desde un principio.
 
-# __Boolean Based SQLi__
+# __Boolean Based SQLi [basado en booleanos]__
 
-## __Definition__
+## __Definición__
 
 La boolean-based SQL injection se basa en enviar una consulta SQL a la base de datos, lo que obliga a la aplicación a devolver un resultado diferente dependiendo de si la consulta dio un resultado TRUE o FALSE. Dependiendo del resultado, el contenido de la respuesta HTTP cambiará o seguirá siendo el mismo (el cambio en la respuesta HTTP generalmente significa una respuesta FALSE, mientras que TRUE no afecta nada). Esto permite que un atacante comprenda si el payload utilizado devolvió true or false, aunque no se devuelvan datos de la base de datos.
 
@@ -320,9 +320,9 @@ Aparece debido a que la letra `s` en ASCII es `115`.
 
 Por supuesto, en el mundo real no podemos simplemente adivinar eso, por lo que debemos usar los operadores > y < para comparar el valor de los caracteres con sus valores ASCII.
 
-# __Union Based SQLi__
+# __Union Based SQLi [basado en uniones]__
 
-## __Definition__
+## __Definición__
 
 Union-based SQLi es una técnica de SQL injection que aprovecha el operador UNION SQL para combinar los resultados de dos o más declaraciones SELECT en un solo resultado que luego se devuelve como parte de la respuesta HTTP.
 
@@ -342,7 +342,7 @@ El ataque UNION SQLi consta de 3 etapas:
 2. Nos aseguramos de que las columnas que encontramos estén en un formato adecuado.
 3. Atacamos y obtenemos algunos datos interesantes.
 
-### __Determining the number of columns required in an SQL injection UNION attack__
+### __Determinar el número de columnas necesarias en un ataque de UNION de inyección SQL__
 
 Hay exactamente dos formas de detectar una:
 
@@ -368,7 +368,7 @@ El segundo, implicaría enviar una serie de payloads de `UNION SELECT` con una s
 
 Ningún error = el número de NULL coincide con el número de columnas.
 
-### __Finding columns with a useful data type in an SQL injection UNION attack__
+### __Encontrar columnas con un tipo de datos útil en un ataque de UNION de inyección SQL__
 
 Generalmente, los datos interesantes que deseamos recuperar estarán en forma de cadena. Después de haber determinado el número de columnas requeridas (por ejemplo, 4), podemos probar cada columna para testear si puede contener string data reemplazando una de los UNION SELECT payloads con un string value. En caso de 4, enviaríamos:
 
@@ -381,7 +381,7 @@ Generalmente, los datos interesantes que deseamos recuperar estarán en forma de
 
 Ningún error = el tipo de datos es útil para nosotros (string).
 
-### __Using an SQL injection UNION attack to retrieve interesting data__
+### __Usar un ataque de UNION de inyección SQL para encontrar información interesante__
 
 Cuando hayamos determinado el número de columnas y encontramos qué columnas pueden contener string data, finalmente podemos comenzar a recuperar datos interesantes.
 
@@ -396,7 +396,7 @@ En esta situación, podemos recuperar el contenido de la tabla del user enviando
 ' UNION SELECT username, password FROM users --
 ```
 
-## __Practice__
+## __Práctica__
 
 Navegamos a la siguiente dirección:
 
@@ -453,7 +453,7 @@ Si queremos dumpear el nombre de todos los usuarios y sus respectivas contraseñ
 
 ![sqli10](https://user-images.githubusercontent.com/88755387/132323913-0b16cbf8-0fd2-4a27-bad0-e5db3df8cf69.png)
 
-# __Automating exploitation__
+# __Explotación automática__
 
 ## __SQLmap__
 
@@ -497,13 +497,13 @@ Como podeis comprobar nos lanza la misma respuesta que anteriormente.
 
 Os dejo por aquí un listado de recursos para practicar:
 
-## __Payload Lists__
+## __Listas de Payloads__
 
 https://github.com/payloadbox/sql-injection-payload-list
 
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
-## __Guides & Blogs__
+## __Guías y Blogs__
 
 https://www.sqlinjection.net/
 
@@ -515,7 +515,7 @@ https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-cheat-she
 
 https://resources.infosecinstitute.com/topic/dumping-a-database-using-sql-injection/
 
-## __Labs and practice__
+## __Labs y práctca__
 
 https://portswigger.net/web-security/sql-injection
 
