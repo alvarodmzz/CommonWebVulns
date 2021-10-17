@@ -4,8 +4,8 @@
 - [__Impacto__](#Impacto)
 - [__Tipos de XSS__](#Tipos-de-XSS)
     - [__Reflected XSS__](#Reflected-XSS)
-            - [__Primer ejemplo__](#Primer-ejemplo)
-            - [__Segundo ejemplo__](#Segundo ejemplo)
+          - [__Primer ejemplo__](#Primer-ejemplo)
+          - [__Segundo ejemplo__](#Segundo ejemplo)
     - [__Stored XSS__](#Stored-XSS)
     - [__DOM XSS__](#DOM-XSS)
 
