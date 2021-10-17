@@ -1,5 +1,14 @@
 ![image](https://user-images.githubusercontent.com/88755387/136074041-7872112e-6a49-496d-a959-987fdfc14e1e.png)
 
+- [__Definición__](#Definición)
+- [__Impacto__](#Impacto)
+- [__Tipos de XSS__](#Tipos-de-XSS)
+    - [__Reflected XSS__](#Reflected-XSS)
+            - [__Primer ejemplo__](#Primer-ejemplo)
+            - [__Segundo ejemplo__](#Segundo ejemplo)
+    - [__Stored XSS__](#Stored-XSS)
+    - [__DOM XSS__](#DOM-XSS)
+
 # __Definición__
 
 El ataque XSS (Cross-site scripting) permite a un atacante ejecutar código arbitrario client-side en el navegador de una víctima. Se puede utilizar para phishing, datos de exfilación, adquisición de cuentas y más.
