@@ -49,7 +49,7 @@ O si tenemos una base de datos de alimentos con diferentes comidas seguidas de c
 SELECT * FROM food WHERE calories > 50;
 ```
 
-Si quereis continuar aprendiendo sobre SQL os dejo el siguiente enlace el cual es un curso de Khan Academy: https://www.khanacademy.org/computing/computer-programming/sql
+Si quereis continuar aprendiendo sobre SQL os dejo el siguiente enlace el cual es un curso de [Khan Academy](https://www.khanacademy.org/computing/computer-programming/sql).
 
 # __¿Qué es SQLi?__
 
