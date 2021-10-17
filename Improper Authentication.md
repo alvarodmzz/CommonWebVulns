@@ -4,9 +4,10 @@
 
 - [__Descripción__](#Descripción)
 - [__Práctica__](#Práctica)
-- [__Tipos de I.A.__](#Types-of-ia)
+- [__Tipos de I.A.__](#Tipos-de-I.A.)
   - [__SAML__](#SAML)
   - [__Oauth__](#Oauth)
+    - [__Forced OAuth profile linking__](#Forced-OAuth-profile-linking)
   - [__SSO__](#SSO)
 - [__Un caso curioso__](#Un-caso-curioso)
 
