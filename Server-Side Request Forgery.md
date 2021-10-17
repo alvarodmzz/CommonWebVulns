@@ -15,9 +15,9 @@
 - [__SSRF Payloads__](#SSRF-Payloads)
   - [__Basic__](#Basic-Payloads)
   - [__Advanced__](#Advanced-Payloads)
-  - [__Reading files__](#Reading-files)
+  - [__Leer archivos__](#Leer-archivos)
 - [__Funcionamiento__](#Cómo-funciona-realmente?)
-- [__SSRF report__](#SSRF-Report)
+- [__Reporte de SSRF__](#Reporte-de-SSRF)
 
 # __¿Cuándo se produce un SSRF?__
 
@@ -150,7 +150,7 @@ Es posible que también se detecte la carga útil de IPv6. En ese caso lo que so
 
 La IP `127.0.0.1` se puede reemplazar con sus formatos decimal y hexadecimal para evitar las restricciones. La versión decimal de la IP del localhost sería `2130706433` y la versión hexadecimal sería `0x7f000001`.
 
-## __Reading files__
+## __Leer archivos__
 
 El escaneo de puertos no es lo único que podemos hacer con SSRF, también podemos leer archivos del servidor pero solo si usamos el esquema adecuado (es decir, para una solicitud HTTP, comenzaríamos la URL con `http://` de manera similar si comenzamos la URL con `file://` intentaría leer los archivos desde el propio servidor.
 
@@ -200,7 +200,7 @@ stockApi=http://169.254.169.254/latest/meta-data/iam/security-credentials/NOMBRE
 ```
 De esta forma, el agente malicioso obtendría acceso a la llave AWS y podría tomar el control de todas las cuentas de AWS.
 
-# __SSRF Report__
+# __Reporte de SSRF__
 
 ## __SSRF in https://imgur.com/vidgif/url__
 
