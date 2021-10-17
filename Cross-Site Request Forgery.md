@@ -3,8 +3,8 @@
 ## __Summary__
 
 - [__¿Qué es la vuln CSRF?__](#¿Qué-es-la-vuln-CSRF?)
-- [__Explotación manual__](#Explotación manual)
-- [__Explotación automática__](#Explotación automática)
+- [__Explotación manual__](#Explotación-manual)
+- [__Explotación automática__](#Explotación-automática)
 
 # __¿Qué es la vuln CSRF?__
 
