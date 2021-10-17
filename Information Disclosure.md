@@ -11,7 +11,7 @@
 - [__NTLM__](#NTLM)
 - [__Protección frente ID's__](Como-prevenir-los-ataques-de-Information-Disclosure)
 
-# __Qué es Information Disclosure?__
+# __¿Qué es Information Disclosure?__
 
 > La divulgación de información se produce cuando una aplicación web no protege adecuadamente la información confidencial, lo que provoca que se revele información o datos sensibles de los usuarios o cualquier cosa relacionada con ellos a un tercero.
 
