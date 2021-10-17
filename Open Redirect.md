@@ -2,18 +2,18 @@
 
 ## __Summary__
 
-- [__What is a Redirect?__](#What-is-Redirect?)
-- [__What is an Open Redirect?__](#What-is-an-Open-Redirect?)
-    - [__Classic scenario__](#Classic-scenario)
-    - [__Exploitation__](#Exploitation)
-    - [__Bad solution__](#Bad-solution)
-- [__Mitigations__](#Mitigations)
+- [__¿Qué es una redirección?__](#¿Qué-es-una-redirección?)
+- [__¿Qué es un Open Redirect?__](#¿Qué-es-un-Open-Redirect?)
+    - [__Escenario mítico__](#Escenario-mítico)
+    - [__Explotación__](#Explotación)
+    - [__Mala solución__](#Mala-solución)
+- [__Mitigaciones__](#Mitigaciones)
 
-# __What is a Redirect?__
+# __¿Qué es una redirección?__
 
 Una redirección ocurre cuando el sitio web o la aplicación web cambia la URL a la que se accede en el cliente, generalmente externa, aunque también existen los internal redirects el cual se denominan reenvíos o forwards. Hay varias formas de hacer esto desde el back-end. Por lo general, las redirecciones se realizan enviando encabezados HTTP específicos al cliente, pero también podemos crear redirects, por ejemplo, usando código JavaScript.
 
-# __What is an Open Redirect?__
+# __¿Qué es un Open Redirect?__
 
 Una redirección abierta (Open Redirect) sucede cuando una aplicación o servidor web utiliza un enlace no validado enviado por el usuario para redirigirlo a un sitio o página web determinada.
 
@@ -40,7 +40,7 @@ $redirect = $_GET['url'];  header("Location: " . $redirect);
 
 Esto es debido a que el atacante puede proporcionar una URL del sitio web malicioso en el valor del parámetro url de la solicitud GET y esta URL de destino se enviará como el `Location` header, redirigiendo al cliente a la página del atacante.
 
-## __Classic scenario__
+## __Escenario mítico__
 
 La siguiente imagen muestra un sitio web vulnerable a open redirect llamado `victim-site.com`. En esta ocasión tenemos una página de inicio de sesión que redirigirá al usuario a la página especificada en el parámetro `returnURL` después de iniciar sesión correctamente.
 
@@ -69,7 +69,7 @@ La siguiente imagen muestra la solicitud del cliente y la respuesta del servidor
 
 ![image](https://user-images.githubusercontent.com/88755387/136061246-8b3053c2-a309-4eeb-b913-925a7f141889.png)
 
-## __Exploitation__
+## __Explotación__
 
 Un atacante puede aprovechar esta vulnerabilidad para redirigir a la víctima a un sitio web de phishing malicioso, simplemente enviándole la siguiente URL:
 
@@ -85,7 +85,7 @@ Para ofuscar la página maliciosa, el atacante puede utilizar una versión encod
 
 El sitio web de phishing engañará a la víctima y la atraerá para que vuelva a insertar sus credenciales y las envie directamente al atacante.
 
-## __Bad solution__
+## __Mala solución__
 
 En muchas ocasiones, la solución para prevenir este tipo de ataques va en contra de las mejores prácticas y no mitiga completamente el problema.
 
@@ -124,7 +124,7 @@ http://victim-site.com/login.php?returnUrl=%2Fattacker-site.com
 
 La dirección de `Location` quedaría de la siguiente manera: `http://victim-site.com.attacker-site.com` y el atacante solo necesitará crear su sitio de phishing bajo el subdominio victim-site.com en lugar de www.
 
-# __Mitigations__
+# __Mitigaciones__
 
 La forma más fácil y eficaz de prevenir los open redirects vulnerables sería no permitir que el usuario pueda controlar a dónde lo redirecciona dicha página. Si tenemos que redirigir al usuario en función de las URLs, siempre debemos usar un ID que se resuelva internamente en la URL respectiva.
 
