@@ -160,7 +160,7 @@ Entonces, por ejemplo, un payload de lectura de un archivo SSRF simple sería `f
 
 Recordemos que es poco probable que podamos leer archivos de un usuario con mayores privilegios, como `root`.
 
-Existen muchos otros tipos de payloads que se pueden usar (como codificación de URL, codificación de URL doble, uso de esquemas como dict, etc.). Podemos ver algunos de estos payloads en el siguiente enlace: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery#file.
+Existen muchos otros tipos de [payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery#file) que se pueden usar (como codificación de URL, codificación de URL doble, uso de esquemas como dict, etc.).
 
 # __Cómo funciona realmente?__
 
@@ -204,7 +204,7 @@ De esta forma, el agente malicioso obtendría acceso a la llave AWS y podría to
 
 ## __SSRF in https://imgur.com/vidgif/url__
 
-Os dejo el reporte en el siguiente enlace por si le quereis echar un vistazo: https://hackerone.com/reports/115748
+Os dejo el reporte en el siguiente [enlace](#https://hackerone.com/reports/115748).
 
 ### __Explicacion del por qué de esta vuln__
 
