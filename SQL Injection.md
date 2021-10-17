@@ -3,7 +3,7 @@
 ## __Summary__
 
 - [__Conceptos básicos del lenguaje SQL__](#Conceptos-básicos-del-lenguaje-SQL)
-    - [__Conceptos-de-SQLi__](#Conceptos-de-SQLi)
+    - [__Conceptos de SQLi__](#Conceptos-de-SQLi)
 - [__¿Qué es SQLi?__](#¿Qué-es-SQLi?)
 - [__Como detectarlo__](#Como-detectarlo)
     - [__Manual - PHP parameter__](#Manual---PHP-parameter)
@@ -31,7 +31,7 @@
 
 SQL en sí mismo es un lenguaje específico de dominio que se utiliza en la programación para administrar bases de datos mediante la lectura de datos operativos.
 
-## __Bloqueo de SQL__
+## __Conceptos de SQLi__
 
 Para comprender SQLi, primero debemos comprender algunos conceptos básicos del lenguaje SQL. En lo que respecta a SQLi, nos centramos principalmente en obtener información de la base de datos.
 
