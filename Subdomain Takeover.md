@@ -124,7 +124,7 @@ Una vez que hemos hecho todo esto, ya nos podemos meter en dicha página.
 
 Hemos logrado realizar un subdomain takeover :laughing:.
 
-Esto no habría sido posible sin la ayuda de @takito1812 el cual estuvo enseñándome de que iba este ataque y como podía ser explotado. Os dejo su twitter x aquí: https://twitter.com/takito1812.
+Esto no habría sido posible sin la ayuda de [Víctor García](https://twitter.com/takito1812) el cual estuvo enseñándome de que iba este ataque y como podía ser explotado.
 
 
 
