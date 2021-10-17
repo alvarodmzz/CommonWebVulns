@@ -54,11 +54,11 @@ Si somos el propietario del dominio existen varios pasos que podemos realizar:
 
 # __Ejemplo__
 
-La primera tool que vamos a utilizar se llama `sonar.sh` y puede ser descargada en el siguiente enlace: https://github.com/jakejarvis/subtake/blob/main/sonar.sh.
+La primera tool que vamos a utilizar se llama `sonar.sh` y puede ser descargada en el siguiente [enlace](https://github.com/jakejarvis/subtake/blob/main/sonar.sh).
 
 Esta es una herramienta que descarga el conjunto de datos y genera un archivo de texto simple de CNAME apuntado a cualquiera de los servicios que hayamos elegido, como por ejemplo GitHub o Shopify debido a que son dos de los servicios que mas subdominios abandonados tienen.
 
-Antes de lanzar el script debemos descargar la última dataset de CNAMES de Rapid7, el cual podemos encontrar en la siguiente página: https://opendata.rapid7.com/sonar.fdns_v2/.
+Antes de lanzar el script debemos descargar la última [dataset](https://opendata.rapid7.com/sonar.fdns_v2/) de CNAMEs de Rapid7.
 
 De esta manera quedaría nuestro comando:
 
@@ -96,7 +96,7 @@ grep GitHub vulnerable.txt
 ![image](https://user-images.githubusercontent.com/88755387/137022026-c3355be0-43f8-42b6-94fc-9519bf470f12.png)
 
 
-Ahora que ya hemos elegido un subdominio vamos a seguir los pasos que nos dice el siguiente repositorio de GitHub: https://github.com/EdOverflow/can-i-take-over-xyz/issues/37.
+Ahora que ya hemos elegido un subdominio vamos a seguir los pasos que nos dice el siguiente [repositorio](https://github.com/EdOverflow/can-i-take-over-xyz/issues/37) de GitHub.
 
 Lo primero es crear un repositorio, luego vamos a la pestaña de `Settings` y una vez ahí dentro elegimos el siguiente Source:
 
@@ -125,26 +125,3 @@ Una vez que hemos hecho todo esto, ya nos podemos meter en dicha página.
 Hemos logrado realizar un subdomain takeover :laughing:.
 
 Esto no habría sido posible sin la ayuda de [Víctor García](https://twitter.com/takito1812) el cual estuvo enseñándome sobre qué se trataba este ataque y como podía ser explotado.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
