@@ -89,8 +89,8 @@ Ahora sólo tenemos que modificar el carrito de la manera correcta para que el p
 
 En resumen, las claves para prevenir las vulnerabilidades de business logic son:
 
-- Nos aseguramos de que los desarrolladores y los testers entienden el dominio al que sirve la aplicación.
-- Evitamos hacer suposiciones implícitas sobre el comportamiento del usuario o de otras partes de la aplicación.
+- Asegurarse de que los desarrolladores y los testers entienden el dominio al que sirve la aplicación.
+- Evitar hacer suposiciones implícitas sobre el comportamiento del usuario o de otras partes de la aplicación.
 
 Deberiamos identificar qué suposiciones hemos hecho sobre el estado del lado del servidor e implementar la lógica necesaria para verificar que estas suposiciones se cumplen. Esto incluye asegurarse de que el valor de cualquier entrada es sensato antes de proceder.
 
