@@ -9,7 +9,7 @@
 - [__CORS Misconfigurations__](#CORS-Misconfigurations)
     - [__Explotación de wildcards (*) mal configurados en las cabeceras CORS__](#Explotación-de-wildcards-(*)-mal-configurados-en-las-cabeceras-CORS)
     - [__Confiar en el wildcard pre-domain como origen__](#Confiar-en-el-wildcard-pre-domain-como-origen)
-- [__Mitigations__](#Mitigations)
+- [__Mitigaciones__](#Mitigaciones)
 
 # __Control de acceso HTTP (CORS)__
 
@@ -119,7 +119,7 @@ else{ //unauthorized access }
 
  Esto puede ser explotado de la misma manera que lo hicimos para la primera misconfiguration de CORS. Podemos crear un nuevo dominio con el nombre que consiste en el nombre de dominio de la lista blanca. Luego, incrustar ese sitio malicioso con exploits que obtendrán información sensible del sitio de la víctima. 
 
-# __Mitigations__
+# __Mitigaciones__
 
 Para implementar CORS de forma segura, necesitas asociar una lista de validación `whitelist` con `Access-Control-Allow-Origin` que identifique qué dominios específicos (por ejemplo, los dominios de nuestra empresa) pueden acceder a los recursos. Entonces dicha aplicación puede validar contra esta lista cuando un dominio solicita acceso. Tampoco querremos definir su cabecera Access-Control-Allow-Origin como NULL, ya que un atacante puede enviar una solicitud con un origen NULL que eluda otros controles.
 
